@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joseph Coiffeur - Salon de coiffure sans RDV dans le métro parisien. Coupe à sec rapide et efficace. Homme, Femme, Enfant.">
+    <title>Joseph Coiffeur - Coupe Express Sans RDV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <h1>Joseph Coiffeur</h1>
+            <p class="subtitle">Coupe à sec • Sans RDV • Rapide & Efficace</p>
+            <p>Votre style en quelques minutes, au cœur du métro parisien</p>
+            <a href="#contact"  class="btn">📍 Métro Madeleine </a>
+            <br><br>
+            <a  ></a>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- NOS PRESTATIONS -->
+        <!-- <section id="services" class="services">
+            <div class="container">
+                <h2>Nos Prestations</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <div class="service-icon">✂️</div>
+                        <h3>Coupe Homme</h3>
+                        <p>Coupe moderne ou classique, adaptée à votre style. Résultat net et soigné.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">💇</div>
+                        <h3>Coupe Femme</h3>
+                        <p>Coupe précise et tendance, pour un look impeccable au quotidien.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">👶</div>
+                        <h3>Coupe Enfant</h3>
+                        <p>Coupe rapide et en douceur pour les plus jeunes. Ambiance détendue garantie.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🪒</div>
+                        <h3>Barbe & Taille</h3>
+                        <p>Entretien de barbe, contours nets et taille précise pour un style soigné.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">💨</div>
+                        <h3>Brushing Express</h3>
+                        <p>Brushing rapide pour un rendu professionnel avant un rendez-vous important.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <h3>Retouche & Conseils</h3>
+                        <p>Retouches et conseils personnalisés pour sublimer votre coiffure.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- NOTRE CONCEPT (About + Why Us fusionnés) -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Notre Concept</h2>
+                <div class="concept-content">
+                    <div class="concept-text">
+                        <h3>Une coiffure rapide, sans compromis</h3>
+                        <p>Situé au cœur d'une station de métro parisienne, notre salon offre un service de coiffure express sans rendez-vous. Spécialisés dans la coupe à sec, nous garantissons un résultat professionnel en un temps record.</p>
+                        <p>Notre philosophie ? Allier rapidité et qualité pour vous permettre de repartir avec un look impeccable, même lors de vos déplacements quotidiens.</p>
+                        <p><strong>Idéalement situé pour :</strong> Cadres pressés, voyageurs, actifs parisiens et ou pour pateinter lors d'un énième retard de métro.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: var(--bois-vernis); margin-bottom: 20px; font-size: 1.8em;">Pourquoi nous choisir ?</h3>
+                        <ul class="advantages-list">
+                            <li>Tous type de textures d'origines capillaires</li>
+                            <li>Sans rendez-vous : venez quand vous voulez</li>
+                            <li>Service rapide : 20-30 minutes chrono</li>
+                            <li>Coupe à sec : technique moderne et efficace</li>
+                            <li>Emplacement unique : directement dans le métro</li>
+                            <li>Tarifs transparents et accessibles</li>
+                            <li>Coiffeurs expérimentés et passionnés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIE -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Nos Réalisations</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <a href="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800" data-lightbox="portfolio" data-title="Coupe dégradée moderne">
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800" alt="Coupe homme moderne">
+                        </a>
+                        <p>Coupe dégradée moderne avec finitions soignées</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800" data-lightbox="portfolio" data-title="Style barbe entretenue">
+                            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800" alt="Entretien barbe">
+                        </a>
+                        <p>Entretien barbe et contours précis</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800" data-lightbox="portfolio" data-title="Coupe femme élégante">
+                            <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800" alt="Coupe femme">
+                        </a>
+                        <p>Coupe femme élégante et structurée</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a href="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800" data-lightbox="portfolio" data-title="Ambiance du salon">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800" alt="Ambiance salon">
+                        </a>
+                        <p>L'ambiance chaleureuse de notre salon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARIFS -->
+        <section id="tarifs" class="tarifs">
+            <div class="container">
+                <h2>Nos Tarifs</h2>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Coupe Homme et Femme</h3>
+                        <div class="price">15€</div>
+                        <p>Coupe classique ou moderne avec finitions</p>
+                    </div>
+
+
+                    <div class="price-card">
+                        <h3>Barbe</h3>
+                        <div class="price">5€</div>
+                        <p>Taille et entretien complet</p>
+                    </div>
+
+                    <div class="price-card">
+                        <h3>Combo Coupe + Barbe</h3>
+                        <div class="price">20€</div>
+                        <p>Forfait avantageux</p>
+                    </div>
+
+                    <div class="price-card">
+                        <h3>Brushing</h3>
+                        <div class="price">20€</div>
+                        <p>Mise en forme rapide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Nous Trouver</h2>
+                
+                <div class="horaires">
+                    <h3>🕒 Horaires d'ouverture</h3>
+                    <p><strong>Lundi - Vendredi :</strong> 10h00 - 19h30</p>
+                    <p><strong>Samedi :</strong> 12h00 - 19h30</p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📍 Adresse</strong>
+                        <p>Dans le métro à 10m du magasin Darty,
+                            <br> rentrée par bouche de métro, 
+                            <br> 2 Rue Tronchet, 75008 Paris </p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Téléphone</strong>
+                        <p><a href="tel:+33651894155">06 51 89 41 55</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📧 Email</strong>
+                        <p><a href="mailto:jos.levi@free.fr">jos.levi@free.fr</a></p>
+                    </div>
+                </div>
+
+                <div id="osm-map"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Joseph Coiffeur. Tous droits réservés.</p>
+            <p>
+                <a href="#mentions">Mentions légales</a> |
+                <a href="#confidentialite">Politique de confidentialité</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // CARTE OPENSTREETMAP
+        // Remplacez les coordonnées par celles de la station de métro
+        const map = L.map('osm-map').setView([48.870875, 2.325324], 15); // Exemple : Paris centre
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Marqueur
+        L.marker([48.870875, 2.325324]).addTo(map)
+            .bindPopup('Joseph Coiffeur<br>Métro Madeleine')
+            .openPopup();
+    </script>
+</body>
+</html>
