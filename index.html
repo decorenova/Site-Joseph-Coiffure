@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joseph Coiffure - Salon de coiffure sans RDV dans le métro parisien. Coupe à sec rapide et efficace. Homme, Femme, Enfant.">
-    <title>Joseph Coiffure - Coupe Express Sans RDV</title>
+    <meta name="description" content="Joseph Coiffeur - Salon de coiffure sans RDV dans le métro parisien. Coupe à sec rapide et efficace. Homme, Femme, Enfant.">
+    <title>Joseph Coiffeur - Coupe Express Sans RDV</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
     </header>
 
     <main>
-        
+
         <!-- NOTRE CONCEPT (About + Why Us fusionnés) -->
         <section id="about" class="about">
             <div class="container">
@@ -79,13 +80,6 @@
                         </a>
                         <p>Coupe femme élégante et structurée</p>
                     </div>
-
-                    <div class="gallery-item">
-                        <a href="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800" data-lightbox="portfolio" data-title="Ambiance du salon">
-                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800" alt="Ambiance salon">
-                        </a>
-                        <p>L'ambiance chaleureuse de notre salon</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -101,18 +95,19 @@
                         <p>Coupe classique ou moderne avec finitions</p>
                     </div>
 
+
                     <div class="price-card">
                         <h3>Barbe</h3>
                         <div class="price">5€</div>
                         <p>Taille et entretien complet</p>
                     </div>
 
-                    <div class="price-card">
-                        <h3>Combo Coupe + Barbe</h3>
-                        <div class="price">20€</div>
-                        <p>Forfait avantageux</p>
-                    </div>
 
+                    <div class="price-card">
+                        <h3>Brushing</h3>
+                        <div class="price">20€</div>
+                        <p>Mise en forme rapide</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,7 +126,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>📍 Adresse</strong>
-                        <p>Au -1, à 10m du magasin Darty,
+                        <p>Dans le métro à 10m du magasin Darty,
                             <br> rentrée par bouche de métro, 
                             <br> 2 Rue Tronchet, 75008 Paris </p>
                     </div>
@@ -151,39 +146,20 @@
     </main>
 
     <!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>&copy; 2025 Joseph Coiffeur. Tous droits réservés.</p>
-        <p>
-            <a href="#mentions-legales.html">Mentions légales</a> |
-            <a href="#politique-confidentialite.html">Politique de confidentialité</a>
-        </p>
-        <p><a href="https://agence-bour.com/" target="_blank">Site produit par Agence Bour</a></p>
-    </div>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Joseph Coiffeur. Tous droits réservés.</p>
+            <p>
+                <a href="mentions.html">Mentions légales</a>
+                |
+                <a href="confidentialite.html">Politique de confidentialité</a>
+            </p>
+        </div>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        // CARTE OPENSTREETMAP
-        // Remplacez les coordonnées par celles de la station de métro
-        const map = L.map('osm-map').setView([48.870875, 2.325324], 15); // Exemple : Paris centre
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Marqueur
-        L.marker([48.870875, 2.325324]).addTo(map)
-            .bindPopup('Joseph Coiffeur<br>Métro Madeleine')
-            .openPopup();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
